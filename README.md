@@ -2,6 +2,8 @@
 
 Using [docker](https://docs.docker.com/get-started/) to run [sfdx cli](https://developer.salesforce.com/tools/sfdxcli).
 
+Lightweight Docker image using alpine.
+
 **Setup**
 
 ```shell
@@ -11,5 +13,5 @@ cd docker-sfdx-cli
 
 docker build -t docker-sfdx-cli --no-cache .
 
-docker run -it -v $(pwd)/projects docker-sfdx-cli
+docker run -it -v $(pwd):/projects docker-sfdx-cli
 ```
